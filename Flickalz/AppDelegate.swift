@@ -19,14 +19,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to initialize your application
         lbl.drawsBackground = true
         lbl.backgroundColor = NSColor.black
-        Timer.scheduledTimer(withTimeInterval: 1.0/Double(hz), repeats: true, block: toggleBackground)
+        Timer.scheduledTimer(withTimeInterval: 1.0/Double(hz * 2), repeats: true, block: toggleBackground)
     }
     
     var hz = 40
     
     func toggleBackground(_ timer: Timer) {
-        lbl.backgroundColor = NSColor.white
-        lbl.backgroundColor = NSColor.black
+        if lbl.backgroundColor == NSColor.white{
+            lbl.backgroundColor = NSColor.black
+        } else {
+            lbl.backgroundColor = NSColor.white
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
