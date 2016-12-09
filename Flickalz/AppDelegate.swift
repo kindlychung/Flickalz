@@ -17,18 +17,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        lbl.drawsBackground = true
-        lbl.backgroundColor = NSColor.black
+        window.backgroundColor = NSColor.black
         Timer.scheduledTimer(withTimeInterval: 1.0/Double(hz * 2), repeats: true, block: toggleBackground)
     }
     
     var hz = 40
     
     func toggleBackground(_ timer: Timer) {
-        if lbl.backgroundColor == NSColor.white{
-            lbl.backgroundColor = NSColor.black
+        if window.backgroundColor == NSColor.white{
+            window.backgroundColor = NSColor.black
         } else {
-            lbl.backgroundColor = NSColor.white
+            window.backgroundColor = NSColor.white
         }
     }
 
@@ -37,6 +36,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
 
-    @IBOutlet weak var lbl: NSTextField!
 }
 
