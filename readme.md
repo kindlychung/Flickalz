@@ -10,3 +10,7 @@ It's free software, use at your own risk, don't blame me for any consequence of 
 
 Mac only.
 Just download the Flickalz.app file on the release page and double click.
+
+# License
+
+BSD
