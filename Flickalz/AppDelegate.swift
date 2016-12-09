@@ -25,11 +25,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var hz = 40
     
     func toggleBackground(_ timer: Timer) {
-        if lbl.backgroundColor == NSColor.black {
-            lbl.backgroundColor = NSColor.white
-        } else {
-            lbl.backgroundColor = NSColor.black
-        }
+        lbl.backgroundColor = NSColor.white
+        lbl.backgroundColor = NSColor.black
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
