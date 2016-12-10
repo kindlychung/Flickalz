@@ -14,6 +14,7 @@ Just download the Flickalz.app.zip file [on the release page](https://github.com
 # Screenshot
 
 Not an accurate depiction, but a gif is usually cute:
+
 ![gif screenshot](http://i.imgur.com/c3NqVtF.gif)
 
 
