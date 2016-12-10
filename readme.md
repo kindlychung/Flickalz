@@ -17,7 +17,7 @@ BSD
 
 # Todo
 
-[] Customizable frequency
-[] Changing frequency according to time 
-[] Use a different UI so that the flickering is constantly visible (from the menu bar, for example)
+- [] Customizable frequency
+- [] Changing frequency according to time 
+- [] Use a different UI so that the flickering is constantly visible (from the menu bar, for example)
 
