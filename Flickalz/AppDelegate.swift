@@ -14,14 +14,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
 
+    @IBOutlet weak var freqFld: NSTextField!
 
+    @IBAction func setFreq(_ sender: NSButton) {
+        restartTimer(freqFld.integerValue)
+    }
+    
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         window.backgroundColor = NSColor.black
-        Timer.scheduledTimer(withTimeInterval: 1.0/Double(hz * 2), repeats: true, block: toggleBackground)
     }
     
-    var hz = 40
+    var timer: Timer = Timer()
+    
+    func restartTimer(_ hz: Int) {
+        timer.invalidate()
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0/Double(hz * 2), repeats: true, block: toggleBackground)
+    }
+    
+    override init() {
+        super.init()
+        restartTimer(40)
+    }
     
     func toggleBackground(_ timer: Timer) {
         if window.backgroundColor == NSColor.white{
