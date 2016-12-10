@@ -9,8 +9,15 @@ It's free software, use at your own risk, don't blame me for any consequence of 
 # Usage
 
 Mac only.
-Just download the Flickalz.app file on the release page and double click.
+Just download the Flickalz.app.zip file [on the release page](https://github.com/kindlychung/Flickalz/releases), unzip it, and double click.
 
 # License
 
 BSD
+
+# Todo
+
+[] Customizable frequency
+[] Changing frequency according to time 
+[] Use a different UI so that the flickering is constantly visible (from the menu bar, for example)
+
